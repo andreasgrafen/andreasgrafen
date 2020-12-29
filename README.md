@@ -5,8 +5,5 @@ Hi! I'm **Andreas** _“[…] a regular everyday normal guy”_ from Leipzig.
 #### This is what I do:
 I keep a close eye on design trends and new techs. Always keen on new challenges, I spent the past few years digging into design principles and web technologies.
 
-#### Find me on the web:
-* [Website](https://andreas.grafen.info)
-* [Codier](https://codier.io/@andreasgrafen)
-* [Telegram](https://t.me/andreasgrafen)
-* [Twitter](https://twitter.com/andreasgrafen)
+[Website](https://andreas.grafen.info) // [Codier](https://codier.io/@andreasgrafen) // [Telegram](https://t.me/andreasgrafen) // [Twitter](https://twitter.com/andreasgrafen)
+
