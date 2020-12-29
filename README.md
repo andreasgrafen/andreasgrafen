@@ -1,6 +1,5 @@
-# Andreas Grafen
-
-_“[…] just a regular everyday normal guy” doing design and code thingies._
+![Code Development](/images/code_development.svg)
+_“[…] just a regular everyday normal guy”_ doing design and code thingies.
 
 I keep a close eye on design trends and new techs. Always keen on new challenges, I spent the past few years digging into design principles and web technologies.
 
