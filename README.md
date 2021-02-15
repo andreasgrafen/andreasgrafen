@@ -1,4 +1,4 @@
-<img align="right" alt="Code Dev" src="https://github.com/andreasgrafen/andreasgrafen/blob/master/images/code.svg" width="300" height="275" />
+<img align="right" alt="Code Dev" src="https://github.com/andreasgrafen/andreasgrafen/blob/master/.repo/images/code.svg" width="300" height="275" />
 
 Hi! I'm **Andreas** _“[…] a regular everyday normal guy”_ from Germany.
 
