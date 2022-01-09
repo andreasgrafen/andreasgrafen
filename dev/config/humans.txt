@@ -1,0 +1,17 @@
+/* TEAM */
+
+Human:   Andreas Grafen
+Contact: andreas [at] grafen.info
+Web:     andreas.grafen.info
+Twitter: @andreasgrafen
+From:    Germany
+
+
+
+/* SITE */
+
+Language:   English
+Doctype:    HTML5
+Code Lang:  Pug • JavaScript (ES6+) • SASS
+IDE/Editor: NVIM, VS Code
+Processing: Gulp
