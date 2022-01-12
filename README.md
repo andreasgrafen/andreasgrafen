@@ -13,4 +13,4 @@ While webdesign is definitely my first love I also enjoy doing motiongraphics an
 
 [Website](https://andreas.grafen.info) // [Codier](https://codier.io/@andreasgrafen) // [Linked In](https://www.linkedin.com/in/andreas-grafen-2205a320b/) // [Twitter](https://twitter.com/andreasgrafen)
 
-Element/Matrix: @ag:unseen.ninja // Telegram: @andreasgrafen
+Element/Matrix: @andreas:grafen.info // Telegram: @andreasgrafen
