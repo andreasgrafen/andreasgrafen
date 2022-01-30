@@ -1,0 +1,41 @@
+#hero {
+
+  display: flex; flex-direction: column; gap: $space;
+  align-items: center; justify-content: space-between;
+
+  padding: $space $space-s;
+  min-height: 100vh;
+
+
+  @media (min-width: 700px) { padding: $space-m; }
+  @media (min-width: 900px) { padding: $space-l; }
+  @media (min-width: 1000px) { flex-direction: row; }
+
+}
+
+
+.intro { @media(min-width: 800px) { max-width: 40vw; }}
+
+
+.terminal {
+
+  max-width: 100vh;
+  padding: $space-s;
+
+  border-radius: $border-radius-l;
+  border: 1px solid var(--overlay);
+  box-shadow: 0 5px 20px 0 var(--shadow);
+  background: var(--surface);
+
+  color: var(--text);
+
+
+  a { color: var(--rose); }
+
+  strong { color: var(--love); }
+
+
+  @media (min-width: 400px) { padding-right: $space; }
+  @media (min-width: 500px) { padding-right: $space-l; }
+
+}

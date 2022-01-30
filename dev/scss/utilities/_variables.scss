@@ -1,15 +1,113 @@
-/*  TYPOGRAPHY
- ** ==========
- */
+/* ----- Spacing & Layout ----- */
 
-$font-family-sans: 'Jost';
+$base-unit: 4;
+
+$space-xs: $base-unit * 0.25rem;
+$space-x:  $base-unit * 0.50rem;
+$space-s:  $base-unit * 1.00rem;
+$space:    $base-unit * 2.00rem;
+$space-m:  $base-unit * 3.00rem;
+$space-l:  $base-unit * 5.00rem;
+$space-xl: $base-unit * 8.00rem;
+
+$border-radius:   $base-unit * 1px;
+$border-radius-l: $base-unit * 4 * 1px;
+
+
+
+
+
+/* ----- Typography ----- */
+
+$font-family-sans:  'Jost';
 $font-family-serif: 'Playfair Display';
 
+$font-weight-normal: 300;
+$font-weight-bold:   500;
+$font-weight-heavy:  800;
+
+$font-size:    $base-unit * .5rem; // 2rem – 20px
+$font-size-s:  $font-size * .8;
+$font-size-m:  $font-size * 1.61;
+$font-size-l:  $font-size-m * 1.61;
+$font-size-xl: $font-size-l * 1.61;
 
 
 
 
-/*  COLORS
- ** =====
- */
 
+/* ----- Colours ----- */
+
+[theme='light'] {
+
+  --base_hsl:    32,  57%, 95%;
+  --surface_hsl: 35, 100%, 98%;
+  --overlay_hsl: 33,  43%, 91%;
+
+  --text_hsl:    248,  19%, 40%;
+  --muted_hsl:   257,   9%, 61%;
+  --subtle_hsl:  248,  12%, 52%;
+
+  --love_hsl:    343,  35%, 55%;
+  --gold_hsl:     35,  81%, 56%;
+  --rose_hsl:      3,  53%, 67%;
+  --pine_hsl:    197,  53%, 34%;
+  --foam_hsl:    189,  30%, 48%;
+  --iris_hsl:    268,  21%, 57%;
+
+}
+
+
+
+[theme='dark'] {
+
+  --base_hsl:    249,  22%, 12%;
+  --surface_hsl: 247,  23%, 15%;
+  --overlay_hsl: 248,  25%, 18%;
+
+  --text_hsl:    245,  50%, 91%;
+  --muted_hsl:   249,  12%, 47%;
+  --subtle_hsl:  248,  15%, 61%;
+
+  --love_hsl:    343,  76%, 68%;
+  --gold_hsl:     35,  88%, 72%;
+  --rose_hsl:      2,  55%, 83%;
+  --pine_hsl:    197,  49%, 38%;
+  --foam_hsl:    189,  43%, 73%;
+  --iris_hsl:    267,  57%, 78%;
+
+}
+
+
+
+[theme='light'],
+[theme='dark'] {
+
+  --base:         hsl(var(--base_hsl));
+  --surface:      hsl(var(--surface_hsl));
+  --overlay:      hsl(var(--overlay_hsl));
+  --shadow:       hsl(var(--surface_hsl), .4);
+
+  --text:         hsl(var(--text_hsl));
+  --muted:        hsl(var(--muted_hsl));
+  --subtle:       hsl(var(--subtle_hsl));
+
+  --love:         hsl(var(--love_hsl));
+  --love_shadow:  hsl(var(--love_hsl), .4);
+
+  --gold:         hsl(var(--gold_hsl));
+  --gold_shadow:  hsl(var(--gold_hsl), .4);
+
+  --rose:         hsl(var(--rose_hsl));
+  --rose_shadow:  hsl(var(--rose_hsl), .4);
+
+  --pine:         hsl(var(--pine_hsl));
+  --pine_shadow:  hsl(var(--pine_hsl), .4);
+
+  --foam:         hsl(var(--foam_hsl));
+  --foam_shadow:  hsl(var(--foam_hsl), .4);
+
+  --iris:         hsl(var(--iris_hsl));
+  --iris_shadow:  hsl(var(--iris_hsl), .4);
+
+}

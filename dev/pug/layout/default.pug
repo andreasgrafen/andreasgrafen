@@ -11,9 +11,17 @@ html
 
     link(rel='shortcut icon', type='img/png', href='/assets/img/favicon.png')
 
-    link(rel='stylesheet', href='/assets/css/main.min.css')
+    link(rel='stylesheet', href='assets/css/main.min.css')
 
 
-  body
+  body(theme='light')
+
+    .cursor.cursor-inner
+    canvas.cursor.cursor-canvas(resize)
 
     block content
+
+    include ../includes/footer
+
+    script(src='assets/js/paper.min.js')
+    script(src='assets/js/main.min.js')
