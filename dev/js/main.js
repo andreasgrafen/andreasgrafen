@@ -30,7 +30,7 @@ const birth = '1995-05-01'
 const uptime = dateDifferece(birth)
 
 const uptimeContainer = document.querySelector('.js--replace-uptime')
-uptimeContainer.innerHTML = uptimeContainer.innerHTML.replace('{{ uptime }}', `${uptime.years}y, ${uptime.months}m, ${uptime.days}d`)
+if (uptimeContainer) { uptimeContainer.innerHTML = uptimeContainer.innerHTML.replace('{{ uptime }}', `${uptime.years}y, ${uptime.months}m, ${uptime.days}d`) }
 
 
 
