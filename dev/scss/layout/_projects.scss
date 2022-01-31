@@ -1,12 +1,4 @@
-#projects {
-
-  padding: $space $space-s;
-
-
-  @media (min-width: 700px) { padding: $space-m; }
-  @media (min-width: 900px) { padding: $space-m $space-l; }
-
-}
+#projects { @include section_spacing; }
 
 
 

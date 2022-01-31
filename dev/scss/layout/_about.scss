@@ -3,13 +3,9 @@
   display: flex; gap: $space;
   align-items: center; justify-content: space-between;
 
-  padding: $space $space-s;
+  @include section_spacing;
 
   background: var(--surface);
-
-
-  @media (min-width:  700px) { padding: $space $space-m; }
-  @media (min-width:  900px) { padding: $space $space-l; }
 
 }
 

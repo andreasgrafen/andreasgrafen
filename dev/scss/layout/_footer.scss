@@ -3,12 +3,8 @@
   display: flex;
   align-items: center; justify-content: space-between;
 
-  padding: $space $space-s;
+  @include section_spacing;
 
   font-size: $font-size-s;
-
-
-  @media (min-width: 700px) { padding: $space $space-m; }
-  @media (min-width: 900px) { padding: $space $space-l; }
 
 }
