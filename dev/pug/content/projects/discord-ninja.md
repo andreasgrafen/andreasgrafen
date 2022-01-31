@@ -1,4 +1,4 @@
-[![Shortlink Preview](assets/img/ninja.jpg)](https://github.com/unseen-ninja/discord-ninja)
+[![Discord Ninja](assets/img/ninja.jpg)](https://github.com/unseen-ninja/discord-ninja)
 
 ### Ninja – a fun Discord-bot
 
