@@ -1,0 +1,18 @@
+@keyframes fade_inup {
+
+  0% {
+
+    transform: translateY($space-x);
+    opacity: 0;
+
+  }
+
+
+  100% {
+
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+
+}

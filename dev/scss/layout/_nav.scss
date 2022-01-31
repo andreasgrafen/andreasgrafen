@@ -7,6 +7,12 @@
 
   padding: $space-x $space-s;
 
+  transform: translateY($space-x);
+  opacity: 0;
+
+  animation: fade_inup 1s ease-in-out forwards;
+  animation-delay: 1000ms;
+
 
   @media (min-width: 700px) { padding: $space-x $space-m; }
   @media (min-width: 900px) { padding: $space-x $space-l; }

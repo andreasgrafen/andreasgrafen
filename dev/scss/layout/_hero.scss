@@ -15,6 +15,28 @@
 .intro { @media(min-width: 800px) { max-width: 40vw; }}
 
 
+.intro h1 {
+
+  transform: translateY($space-x);
+  opacity: 0;
+
+  animation: fade_inup 1s ease-in-out forwards;
+  animation-delay: 200ms;
+
+}
+
+
+.intro p {
+
+  transform: translateY($space-x);
+  opacity: 0;
+
+  animation: fade_inup 1s ease-in-out forwards;
+  animation-delay: 275ms;
+
+}
+
+
 .terminal {
 
   max-width: 100vh;
@@ -26,6 +48,12 @@
   background: var(--surface);
 
   color: var(--text);
+
+  transform: translateY($space-x);
+  opacity: 0;
+
+  animation: fade_inup 1s ease-in-out forwards;
+  animation-delay: 475ms;
 
 
   a { color: var(--rose); }
