@@ -17,8 +17,15 @@ Other than that I'm big into privacy and cyber security as those topic are some 
 
 <br>
 
-Find me online:<br>
+**Find me online**:
 [Website](https://andreas.grafen.info) • [Codier](https://codier.io/@andreasgrafen) • [Linked In](https://www.linkedin.com/in/andreas-grafen-2205a320b/) • [Twitter](https://twitter.com/andreasgrafen)
+<br>
 
-Contact:<br>
+**Contact**:<br>
 Matrix: @andreas:grafen.info • Telegram: @andreasgrafen
+<br><br>
+
+**Personal Stats**:<br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andreasgrafen&layout=compact&title_color=C9CBFF&text_color=988BA2&icon_color=988BA2&bg_color=1A1826&hide_border=true&border_radius=0&custom_title=My%20Top%20Languages" alt="Top Languages">
+
+<br>
