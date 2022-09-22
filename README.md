@@ -43,7 +43,7 @@ Other than that I'm big into privacy and cyber security as those topic are some 
 
 [![Website](https://img.shields.io/badge/-andreas.grafen.info-white?logo=nginx&logoColor=white&color=181926&style=for-the-badge)
 ](https://andreas.grafen.info) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-white?logo=linkedin&logoColor=white&color=181926&style=for-the-badge)
-](https://www.linkedin.com/in/andreas-grafen-2205a320b/) [![Twitter](https://img.shields.io/badge/-Twitter-white?logo=twitter&logoColor=white&color=181926&style=for-the-badge)
+](https://www.linkedin.com/in/andreasgrafen/) [![Twitter](https://img.shields.io/badge/-Twitter-white?logo=twitter&logoColor=white&color=181926&style=for-the-badge)
 ](https://twitter.com/andreasgrafen)<br>
 [![Matrix: @andreas:grafen.info](https://img.shields.io/badge/-@andreas:grafen.info-white?logo=Matrix&logoColor=white&color=181926&style=for-the-badge)
 ](https://matrix.to/#/@andreas:grafen.info) [![Telegram @andreasgrafen](https://img.shields.io/badge/-@andreasgrafen-white?logo=Telegram&logoColor=white&color=181926&style=for-the-badge)](https://t.me/andreasgrafen)
