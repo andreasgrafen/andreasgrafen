@@ -23,9 +23,9 @@ Other than that I'm big into privacy and cyber security as those topic are some 
 
 &nbsp;
 
-**Thing I really love working on**<br>
+**Things I really love working on**<br>
 
-[![Catppuccin](https://github-readme-stats.vercel.app/api/pin/?username=catppuccin&repo=catppuccin&title_color=C9CBFF&text_color=cad3f5&icon_color=cad3f5&bg_color=181926&hide_border=true)](https://github.com/catppuccin/catppuccin) [![Cascade](https://github-readme-stats.vercel.app/api/pin/?username=andreasgrafen&repo=cascade&title_color=C9CBFF&text_color=cad3f5&icon_color=cad3f5&bg_color=181926&hide_border=true)](https://github.com/andreasgrafen/cascade)
+<a href="https://github.com/catppuccin/catppuccin"><img src="https://github-readme-stats.vercel.app/api/pin/?username=catppuccin&repo=catppuccin&title_color=C9CBFF&text_color=cad3f5&icon_color=cad3f5&bg_color=181926&hide_border=true" alt="Catppuccin"></a> <a href="https://twitter.com/theprimeagen"><img src="https://raw.githubusercontent.com/andreasgrafen/andreasgrafen/main/.repo/images/sexppuccin.png" alt="Catppuccin is for Sex Havers" width="400px" height="120px"></a> <a href="https://github.com/andreasgrafen/cascade"><img src="https://github-readme-stats.vercel.app/api/pin/?username=andreasgrafen&repo=cascade&title_color=C9CBFF&text_color=cad3f5&icon_color=cad3f5&bg_color=181926&hide_border=true" alt="Cascade"></a>
 
 &nbsp;
 
