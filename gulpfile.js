@@ -1,13 +1,22 @@
 const { src, dest, watch } = require('gulp')
 
-const rename = require('gulp-rename')
-const sync   = require('browser-sync').create()
-const pug    = require('gulp-pug')
-const sass   = require('gulp-sass')(require('node-sass'))
-const prefix = require('gulp-autoprefixer')
-const babel  = require('gulp-babel')
-const minify = require('gulp-minify')
-const cwebp  = require('gulp-cwebp')
+const rename = require('gulp-rename'),
+      sync   = require('browser-sync').create(),
+      pug    = require('gulp-pug'),
+      sass   = require('gulp-sass')(require('node-sass')),
+      prefix = require('gulp-autoprefixer'),
+      babel  = require('gulp-babel'),
+      minify = require('gulp-minify'),
+      cwebp  = require('gulp-cwebp')
+
+
+const config = {
+
+  source: './dev',
+  output: './public',
+  assets: `/assets`
+
+}
 
 
 
@@ -15,9 +24,9 @@ const cwebp  = require('gulp-cwebp')
 
 const compilePug = () => {
 
-  return src('./dev/pug/*.pug')
-  .pipe(pug({pretty: true}))
-  .pipe(dest('./public/'))
+  return src(`${config.source}/pug/*.pug`)
+  .pipe(pug())
+  .pipe(dest(config.output))
 
 }
 
@@ -25,11 +34,11 @@ const compilePug = () => {
 
 const compileSass = () => {
 
-  return src('./dev/scss/**/*.{scss,sass}')
+  return src(`${config.source}/scss/**/*.{scss,sass}`)
   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(prefix({cascade: false }))
   .pipe(rename({extname: '.min.css'}))
-  .pipe(dest('./public/assets/css/'))
+  .pipe(dest(`${config.output}/${config.assets}/css/`))
   .pipe(sync.stream())
 
 }
@@ -38,10 +47,10 @@ const compileSass = () => {
 
 const compileJS = () => {
 
-  return src('./dev/js/**/*.js')
+  return src(`${config.source}/js/**/*.js`)
   .pipe(babel({presets: ['@babel/preset-env']}))
   .pipe(minify({ext: { min: '.min.js'}}))
-  .pipe(dest('./public/assets/js/'))
+  .pipe(dest(`${config.output}/${config.assets}/js/`))
   .pipe(sync.stream())
 
 }
@@ -50,17 +59,17 @@ const compileJS = () => {
 
 const convertImages = () => {
 
-  return src('./dev/img/**/*.{jpg,jpeg,png}')
+  return src(`${config.source}/img/**/*.{jpg,jpeg,png}`)
   .pipe(cwebp())
-  .pipe(dest('./public/assets/img/'))
+  .pipe(dest(`${config.output}/${config.assets}/img/`))
 
 }
 
 
 const copyImages = () => {
 
-  return src('./dev/img/**/*.{svg,gif,webp}')
-  .pipe(dest('./public/assets/img/'))
+  return src(`${config.source}/img/**/*.{svg,gif,webp}`)
+  .pipe(dest(`${config.output}/${config.assets}/img/`))
 
 }
 
@@ -68,8 +77,8 @@ const copyImages = () => {
 
 const copyConfig = () => {
 
-  return src('./dev/config/*.txt')
-  .pipe(dest('./public/'))
+  return src(`${config.source}/config/*.txt`)
+  .pipe(dest(config.output))
 
 }
 
@@ -79,11 +88,11 @@ const copyConfig = () => {
 
 exports.serve = () => {
 
-  sync.init({server: {baseDir: './public'}})
+  sync.init({server: {baseDir: config.output}})
 
-  watch('./dev/pug/*.pug', compilePug).on('change', sync.reload)
-  watch('./dev/scss/**/*.{scss,sass}', compileSass)
-  watch('./dev/js/**/*.js', compileJS)
+  watch(`${config.source}/pug/**/*.pug`, compilePug).on('change', sync.reload)
+  watch(`${config.source}/scss/**/*.{scss,sass}`, compileSass)
+  watch(`${config.source}/js/**/*.js`, compileJS)
 
 }
 
