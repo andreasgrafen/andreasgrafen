@@ -1,104 +1,105 @@
-const {task, src, dest, parallel, series, watch} = require('gulp')
+const { src, dest, watch } = require('gulp')
 
-
-// general
-const config = require('./gulpconfig.js')
 const rename = require('gulp-rename')
-
-// html
+const sync   = require('browser-sync').create()
 const pug    = require('gulp-pug')
-
-// css
 const sass   = require('gulp-sass')(require('node-sass'))
 const prefix = require('gulp-autoprefixer')
-
-// js
 const babel  = require('gulp-babel')
 const minify = require('gulp-minify')
+const cwebp  = require('gulp-cwebp')
 
 
 
 
 
-task('configText', () => {
-  return src(config.config.text.src)
-  .pipe(dest(config.config.text.dest))
-})
+const compilePug = () => {
 
-task('configHidden', () => {
-  return src(config.config.hidden.src)
-  .pipe(rename({
-    prefix: '.',
-    extname: ''
-  }))
-  .pipe(dest(config.config.hidden.dest))
-})
+  return src('./dev/pug/*.pug')
+  .pipe(pug({pretty: true}))
+  .pipe(dest('./public/'))
 
-task('config', parallel('configText', 'configHidden'))
+}
 
 
 
-task('pug', () => {
-  return src(config.pug.src)
-  .pipe(pug(config.pug.opts.pug))
-  .pipe(dest(config.pug.dest))
-})
+const compileSass = () => {
+
+  return src('./dev/scss/**/*.{scss,sass}')
+  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+  .pipe(prefix({cascade: false }))
+  .pipe(rename({extname: '.min.css'}))
+  .pipe(dest('./public/assets/css/'))
+  .pipe(sync.stream())
+
+}
 
 
 
-task('sass', () => {
-  return src(config.sass.src)
-  .pipe(sass(config.sass.opts.sass).on('error', sass.logError))
-  .pipe(prefix(config.sass.opts.autoprefixer))
-  .pipe(rename({extname: config.sass.ext}))
-  .pipe(dest(config.sass.dest))
-})
+const compileJS = () => {
+
+  return src('./dev/js/**/*.js')
+  .pipe(babel({presets: ['@babel/preset-env']}))
+  .pipe(minify({ext: { min: '.min.js'}}))
+  .pipe(dest('./public/assets/js/'))
+  .pipe(sync.stream())
+
+}
 
 
 
-task('js', () => {
-  return src(config.js.src)
-  .pipe(babel(config.js.opts.babel))
-  .pipe(minify({ext: {min: config.js.ext}}))
-  .pipe(dest(config.js.dest))
-})
+const convertImages = () => {
+
+  return src('./dev/img/**/*.{jpg,jpeg,png}')
+  .pipe(cwebp())
+  .pipe(dest('./public/assets/img/'))
+
+}
+
+
+const copyImages = () => {
+
+  return src('./dev/img/**/*.{svg,gif,webp}')
+  .pipe(dest('./public/assets/img/'))
+
+}
 
 
 
-task('images', () => {
-  return src(config.images.src)
-  .pipe(dest(config.images.dest))
-})
+const copyConfig = () => {
 
+  return src('./dev/config/*.txt')
+  .pipe(dest('./public/'))
 
-
-task('fonts', () => {
-  return src(config.fonts.src)
-  .pipe(dest(config.fonts.dest))
-})
+}
 
 
 
 
 
-task('default', parallel(
-  'config',
-  'pug',
-  'sass',
-  'js',
-  'images',
-  'fonts'
-))
+exports.serve = () => {
+
+  sync.init({server: {baseDir: './public'}})
+
+  watch('./dev/pug/*.pug', compilePug).on('change', sync.reload)
+  watch('./dev/scss/**/*.{scss,sass}', compileSass)
+  watch('./dev/js/**/*.js', compileJS)
+
+}
 
 
+exports.default = async () => {
 
-task('watchPug', () => { watch(`${config.watchSource}/pug/**/*`, series('pug')) })
-task('watchSass', () => { watch(`${config.watchSource}/scss/**/*`, series('sass')) })
-task('watchJS', () => { watch(`${config.watchSource}/js/**/*`, series('js')) })
+  copyConfig()
+  compilePug()
+  compileSass()
+  compileJS()
+  convertImages()
+  copyImages()
+
+}
 
 
-task('watch', parallel(
-  'watchPug',
-  'watchSass',
-  'watchJS'
-))
+exports.pug  = compilePug
+exports.sass = compileSass
+exports.js   = compileJS
