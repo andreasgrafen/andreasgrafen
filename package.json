@@ -5,6 +5,7 @@
   "author": "Andreas Grafen",
   "license": "MIT",
   "scripts": {
+    "serve": "gulp && gulp serve",
     "build": "gulp"
   },
   "repository": {
