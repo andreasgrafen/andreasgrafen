@@ -7,30 +7,22 @@ html
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
 
     title Andreas Grafen – Design & Code
-    meta(name='description', content='Hi! I\' a Designer and Developer based in Leipzig, Germany. Want to learn more about me? Check out my site! c:')
+    meta(name='description', content='Hi! I\' a Designer and Developer based in Leipzig. Want to learn more about me? Check out my site! c:')
 
     meta(property='og:title', content='Andreas Grafen — Design &amp; Code')
-    meta(property='og:description', content='Designer &amp; Coder from Leipzig, Germany. c:')
+    meta(property='og:description', content='Hi! I\' a Designer and Developer based in Leipzig. Want to learn more about me? Check out my site! c:')
     meta(property='og:url', content='https://andreas.grafen.info/')
+    meta(property='og:image', content='assets/img/social.webp')
     meta(name='twitter:card', content='summary_large_image')
-    meta(property='og:image', content='assets/img/aginfo.jpg')
     meta(name='twitter:image:alt', content='Preview of andreas.grafen.info')
+    meta(content='#FFFFFF', data-react-helmet='true', name='theme-color')
 
     link(rel='shortcut icon', type='img/png', href='assets/img/favicon.png')
-
     link(rel='stylesheet', href='assets/css/main.min.css')
 
 
   body(theme='light')
 
-    include ../includes/nav
-
-    .cursor.cursor-inner
-    canvas.cursor.cursor-canvas(resize)
-
     block content
 
-    include ../includes/footer
-
-    script(src='assets/js/paper.min.js')
     script(src='assets/js/main.min.js')

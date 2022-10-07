@@ -8,31 +8,6 @@ body {
   font-size: $font-size;
   font-weight: $font-weight-normal;
 
-  color: var(--text);
-
 }
 
-
-
-[theme='light'] ::selection { background: var(--pine); color: var(--surface); }
-[theme='dark'] ::selection { background: var(--pine); color: var(--text); }
-
-
-h1, h2, h3, h4, h5, h6, p { margin: 0; margin-bottom: .5em; padding: 0; }
-
-
-h1,
-h2 {
-
-  font-family: $font-family-serif;
-  font-weight: $font-weight-heavy;
-
-}
-
-h1, section h1 { font-size: $font-size-l; }
-h2, section h2 { font-size: $font-size-m; }
-h3, section h3 { font-size: $font-size; }
-
-strong { font-weight: $font-weight-bold; }
-a { color: var(--pine); }
-code { font-family: 'Fira Code'; }
+code { font-family: $font-family-mono; }

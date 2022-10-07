@@ -1,9 +1,0 @@
-@mixin section_spacing {
-
-  align-items: center; justify-content: space-between;
-
-
-  @media (min-width:  700px) { padding: $space $space-m; }
-  @media (min-width:  900px) { padding: $space $space-l; }
-
-}
