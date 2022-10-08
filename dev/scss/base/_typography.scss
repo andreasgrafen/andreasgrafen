@@ -5,9 +5,28 @@
 body {
 
   font-family: $font-family-sans;
-  font-size: $font-size;
-  font-weight: $font-weight-normal;
+  font-size: $font-size; font-weight: $font-weight-normal;
+  line-height: $line-height; letter-spacing: $letter-spacing;
+  color: var(--text);
 
 }
+
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; padding: 0; }
+
+
+h1, h2 {
+
+  font-family: $font-family-serif;
+  font-weight: $font-weight-heavy; font-style: italic;
+  line-height: $line-height-s;
+  color: var(--text-muted);
+
+}
+
+
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
+
 
 code { font-family: $font-family-mono; }
