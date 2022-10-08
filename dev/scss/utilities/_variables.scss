@@ -43,13 +43,13 @@ $letter-spacing: 0.025ch;
 
 /* ----- Colours ----- */
 
-@import "catppuccin";
+@import "palettes/catppuccin";
 [theme="catppuccin-mocha"]     { @each $name, $colour in $mocha     { --ctp-#{$name}: #{$colour}; }}
 [theme="catppuccin-macchiato"] { @each $name, $colour in $macchiato { --ctp-#{$name}: #{$colour}; }}
 [theme="catppuccin-frappe"]    { @each $name, $colour in $frappe    { --ctp-#{$name}: #{$colour}; }}
 [theme="catppuccin-latte"]     { @each $name, $colour in $latte     { --ctp-#{$name}: #{$colour}; }}
 
-@import "rose_pine";
+@import "palettes/rose_pine";
 [theme="rosepine-main"] { @each $name, $colour in $main { --rp-#{$name}: #{$colour}; }}
 [theme="rosepine-moon"] { @each $name, $colour in $moon { --rp-#{$name}: #{$colour}; }}
 [theme="rosepine-dawn"] { @each $name, $colour in $dawn { --rp-#{$name}: #{$colour}; }}
