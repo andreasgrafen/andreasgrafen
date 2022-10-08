@@ -32,3 +32,68 @@ $font-size-s:  $font-size * .8;
 $font-size-m:  $font-size * 1.61;
 $font-size-l:  $font-size-m * 1.61;
 $font-size-xl: $font-size-l * 1.61;
+
+$line-height:    1.5;
+$line-height-s:  1.2;
+$letter-spacing: 0.025ch;
+
+
+
+
+
+/* ----- Colours ----- */
+
+@import "catppuccin";
+[theme="catppuccin-mocha"]     { @each $name, $colour in $mocha     { --ctp-#{$name}: #{$colour}; }}
+[theme="catppuccin-macchiato"] { @each $name, $colour in $macchiato { --ctp-#{$name}: #{$colour}; }}
+[theme="catppuccin-frappe"]    { @each $name, $colour in $frappe    { --ctp-#{$name}: #{$colour}; }}
+[theme="catppuccin-latte"]     { @each $name, $colour in $latte     { --ctp-#{$name}: #{$colour}; }}
+
+@import "rose_pine";
+[theme="rosepine-main"] { @each $name, $colour in $main { --rp-#{$name}: #{$colour}; }}
+[theme="rosepine-moon"] { @each $name, $colour in $moon { --rp-#{$name}: #{$colour}; }}
+[theme="rosepine-dawn"] { @each $name, $colour in $dawn { --rp-#{$name}: #{$colour}; }}
+
+
+
+body,
+[theme],
+[theme*="catppuccin"] {
+
+  --background:       var(--ctp-base,      #FAFAFC);
+  --background-shade: var(--ctp-crust,     #EAEAEC);
+  --background-light: var(--ctp-overlay0,  #FFFFFF);
+
+  --accent:           var(--ctp-mauve,     #eb3b5a);
+
+  --text:             var(--ctp-text,      #303952);
+  --text-muted:       var(--ctp-subtext0,  #596275);
+
+  --link:             var(--ctp-rosewater, #4b7bec);
+  --link-hover:       var(--ctp-flamingo,  #3867d6);
+
+}
+
+[theme*="catppuccin-latte"] {
+
+  --background-shade: var(--ctp-overlay0);
+  --background-light: var(--ctp-crust);
+
+}
+
+
+[theme*="rosepine"] {
+
+  --background:       var(--rp-base);
+  --background-shade: var(--rp-overlay);
+  --background-light: var(--rp-surface);
+
+  --accent:           var(--rp-iris);
+
+  --text:             var(--rp-text);
+  --text-muted:       var(--rp-muted);
+
+  --link:             var(--rp-pine);
+  --link-hover:       var(--rp-foam);
+
+}
