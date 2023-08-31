@@ -41,10 +41,7 @@ Other than that I'm big into privacy and cyber security as those topic are some 
 
 **Catch me online! How 'bout da'?**<br>
 
-[![Website](https://img.shields.io/badge/-andreas.grafen.info-white?logo=nginx&logoColor=white&color=181926&style=for-the-badge)
-](https://andreas.grafen.info) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-white?logo=linkedin&logoColor=white&color=181926&style=for-the-badge)
-](https://www.linkedin.com/in/andreasgrafen/) [![Twitter](https://img.shields.io/badge/-Twitter-white?logo=twitter&logoColor=white&color=181926&style=for-the-badge)
-](https://twitter.com/andreasgrafen)<br>
+[![Website](https://img.shields.io/badge/-andreas.grafen.info-white?logo=nginx&logoColor=white&color=181926&style=for-the-badge)](https://andreas.grafen.info) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-white?logo=linkedin&logoColor=white&color=181926&style=for-the-badge)](https://www.linkedin.com/in/andreasgrafen/) [![Mastodon](https://img.shields.io/badge/-Mastodon-white?logo=mastodon&logoColor=white&color=181926&style=for-the-badge)](https://mastodon.grafen.info/@andreas)<br>
 [![Matrix: @andreas:grafen.info](https://img.shields.io/badge/-@andreas:grafen.info-white?logo=Matrix&logoColor=white&color=181926&style=for-the-badge)
 ](https://matrix.to/#/@andreas:grafen.info) [![Telegram @andreasgrafen](https://img.shields.io/badge/-@andreasgrafen-white?logo=Telegram&logoColor=white&color=181926&style=for-the-badge)](https://t.me/andreasgrafen)
 
