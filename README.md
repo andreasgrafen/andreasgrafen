@@ -1,12 +1,3 @@
-<div align="center">
-
-![Baby Greg Waving](https://c.tenor.com/Q5FeL3e0XK4AAAAi/babyyoda.gif)
----
-
-</div>
-
-&nbsp;
-
 <details>
 <summary>»<em>[…] just a regular everyday normal guy</em>« from Germany who is working on design and code thingies – well, sometimes.<br>
 Here is a little something about myself:</summary>
