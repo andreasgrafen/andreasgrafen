@@ -32,14 +32,6 @@ Other than that I'm big into privacy and cyber security as those topic are some 
 
 **Catch me online! How 'bout da'?**<br>
 
-[![Website](https://img.shields.io/badge/-andreas.grafen.info-white?logo=nginx&logoColor=white&color=181926&style=for-the-badge)](https://andreas.grafen.info) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-white?logo=linkedin&logoColor=white&color=181926&style=for-the-badge)](https://www.linkedin.com/in/andreasgrafen/) [![Mastodon](https://img.shields.io/badge/-Mastodon-white?logo=mastodon&logoColor=white&color=181926&style=for-the-badge)](https://mastodon.grafen.info/@andreas)<br>
-[![Matrix: @andreas:grafen.info](https://img.shields.io/badge/-@andreas:grafen.info-white?logo=Matrix&logoColor=white&color=181926&style=for-the-badge)
-](https://matrix.to/#/@andreas:grafen.info) [![Telegram @andreasgrafen](https://img.shields.io/badge/-@andreasgrafen-white?logo=Telegram&logoColor=white&color=181926&style=for-the-badge)](https://t.me/andreasgrafen)
-
-&nbsp;
-
-If you *really* like my work you can buy me a coffee to fuel further development.<br>
-While appreciated it's ofc by no means necessary. ♡<br><br>
-[![Buy me a Coffee <3](https://img.shields.io/static/v1?label=&message=Buy%20me%20a%20Coffee&style=for-the-badge&color=e6e9ef&labelColor=ccd0da&logo=kofi)](https://ko-fi.com/andreasgrafen)
+[![Website](https://img.shields.io/badge/-unseen.ninja-white?logo=nginx&logoColor=white&color=181926&style=for-the-badge)](https://unseen.ninja) [![Telegram @andreasgrafen](https://img.shields.io/badge/-@andreasgrafen-white?logo=Telegram&logoColor=white&color=181926&style=for-the-badge)](https://t.me/andreasgrafen)
 
 </div>
